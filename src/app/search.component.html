@@ -1,0 +1,30 @@
+<div class="search-criteria">
+    <form [formGroup]="movieSearchForm" novalidate>
+        <div class="form-control-group">
+            <label></label>
+            <div *ngIf="errorMessage" class="errorMsg">{{errorMessage}}</div>
+        </div>
+        <div class="form-control-group">
+            <label>Movie title: </label>
+            <input type="text" formControlName="title" />
+        </div>
+        <div class="form-control-group">
+            <label>Year: </label>
+            <input type="text" formControlName="year" />
+        </div>
+        <div>
+            <button class="submit-btn" (click)="getMovies(movieSearchForm.value, false)">Search</button>
+            <button class="clear-btn" (click)="clearFields()">Clear</button>
+        </div>
+    </form>
+    <div class="recent-searches">
+        <div class="title">Recent searches:</div>
+        <div *ngFor="let searchItem of searchItems">
+            <button (click)="getMovies(searchItem, true)">
+                <span>{{searchItem.title}}</span>
+                <span *ngIf="searchItem.title && searchItem.year"> | </span>
+                <span>{{searchItem.year}}</span>
+            </button>
+        </div>
+    </div>
+</div>

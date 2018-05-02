@@ -1,0 +1,83 @@
+.search-criteria {
+	display: flex;
+	margin: 20px;
+	padding: 20px;
+}
+@media only screen and (max-width: 600px) {
+	.search-criteria {
+		flex-direction: column;
+		align-items: center;
+	}
+	.search-criteria .recent-searches {
+		margin-top: 50px;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	.search-criteria .form-control-group {
+		flex-direction: column;
+	}
+	.search-criteria .form-control-group label {
+		text-align: left;
+	}
+}
+.search-criteria input {
+	height: 40px;
+	font-size: 24px;
+	padding-left: 10px;
+	border: 1px solid;
+}
+.search-criteria .form-control-group {
+	display:flex;
+	margin-bottom: 15px;
+}
+.search-criteria label {
+	font-size: 22px;
+    min-width: 150px;
+    text-align: right;
+    display: block;
+	margin-right: 20px;
+	line-height: 1.8;
+}
+.search-criteria button {
+	width: 100px;
+	font-size: 20px;
+	background: green;
+	border: none;
+	float:right;
+	cursor: pointer;
+}
+.search-criteria .clear-btn{
+	background: #CCC;
+	margin-right: 10px;
+}
+.search-criteria .submit-btn{
+	background: wheat;
+}
+
+.search-criteria .errorMsg {
+	color: red;
+	font-size: 26px;
+}
+
+.recent-searches {
+	margin-left: 20px;
+	padding-left: 20px;
+}
+.recent-searches .title {
+	font-size: 24px;
+	font-weight: 600;
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+.recent-searches button {
+	background: none;
+	cursor: pointer;
+	font-size: 22px;
+	border-style: none;
+	width: 100%;
+}
+
+.recent-searches button:hover {
+	text-decoration: underline;
+	color: blue;
+}
