@@ -1,3 +1,7 @@
+# Demo
+Check the below link for demo of the application.
+[https://ak-omdb-api-search-app.herokuapp.com/](https://ak-omdb-api-search-app.herokuapp.com/)
+
 # NgOmdbSearchApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
